@@ -1,0 +1,127 @@
+{
+  "reference": "http://www.aip.net.nz/NavWalk.aspx?section=CHARTS&tree=Auckland",
+  "radio": {
+    "twr": "Auckland Tower",
+    "app": "Auckland Approach",
+    "dep": "Auckland Departure"
+  },
+  "icao": "NZAA",
+  "iata": "AKL",
+  "magnetic_north": 19.3,
+  "ctr_radius": 60,
+  "ctr_ceiling": 60000,
+  "initial_alt": 3000,
+  "position": ["S37d00m20.4", "E174d47m25.1"],
+  "rr_radius_nm": 5.0,
+  "rr_center": ["S37d00m29.0", "E174d47m31.0"],
+  "has_terrain": false,
+  "wind": {
+    "angle": 230,
+    "speed": 6
+  },
+  "fixes": { 
+    "KALAG":  ["S33d41m39.0", "E175d19m26.0"],
+	"AGREX":  ["S33d43m30.0", "E175d33m52.0"],
+	"KALAG":  ["S33d41m39.0", "E175d19m26.0"],
+	"KALAG":  ["S33d41m39.0", "E175d19m26.0"],
+	"KALAG":  ["S33d41m39.0", "E175d19m26.0"],
+	"KALAG":  ["S33d41m39.0", "E175d19m26.0"],
+	"KALAG":  ["S33d41m39.0", "E175d19m26.0"],
+	"KALAG":  ["S33d41m39.0", "E175d19m26.0"],
+	"KALAG":  ["S33d41m39.0", "E175d19m26.0"],
+
+  },
+  "runways": [
+    {
+      "name": ["05R", "23L"],
+      "name_offset": [[0, 0], [0, 0]],
+      "end": [["S37d01m02.3", "E174d46m01.5"], ["S37d00m23.8", "E174d48m20.6"]],
+      "delay": [20, 20],
+      "ils": [true, true]
+    }
+  ],
+  "sids": {
+    "NORTH": {
+      "icao": "NORTH",
+      "name": "NORTH",
+      "rwy": {
+        "19" : ["NORTH"],
+        "01" : ["NORTH"],
+        "25L": ["NORTH"],
+        "25R": ["NORTH"],
+        "07L": ["NORTH"],
+        "07R": ["NORTH"]
+      },
+      "draw": [["EBBR","NORTH"]]
+    },
+  },
+  "departures": {
+    "destinations": [
+      "NORTH"
+    ],
+    "type": "random",
+    "frequency": 2,
+    "airlines": [
+      ["ual", 3],
+      ["baw", 5],
+      ["cessna", 4],
+      ["bel", 6]
+    ]
+  },
+  "arrivals":[
+    {
+      "radial": 250,
+      "heading": 80,
+      "altitude": [5000, 7000],
+      "speed": 250,
+      "type": "random",
+      "frequency": 7.5,
+      "airlines": [
+        ["ual", 2],
+        ["baw", 5],
+        ["fastga", 20],
+	["bel", 7]
+      ]
+    },
+    {
+      "radial": 110,
+      "heading": 280,
+      "altitude": [5000, 8000],
+      "speed": 250,
+      "type": "random",
+      "frequency": 7.5,
+      "airlines":[
+        ["ual", 5],
+        ["baw", 1],
+        ["fastga", 3],
+	["bel", 4]
+      ]
+    },
+    {
+      "radial": 210,
+      "heading": 30,
+      "altitude": [3000, 5000],
+      "speed": 120,
+      "type": "random",
+      "frequency": 15,
+      "airlines": [
+        ["lightga", 20],
+	["bel", 3]
+      ]
+    },
+    {
+      "radial": 315,
+      "heading": 135,
+      "altitude": [6000, 7000],
+      "speed": 250,
+      "type": "random",
+      "frequency": 12.5,
+      "airlines": [
+        ["ual", 10],
+        ["baw", 10],
+        ["fastga", 1],
+	["bel", 12]
+      ]
+    }
+  ]
+}
