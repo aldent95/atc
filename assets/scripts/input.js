@@ -129,8 +129,8 @@ function input_parse() {
 
   if (prop.input.command.length == 0)
     return;
-
-  var match = /^\s*(\w+)/.exec(prop.input.command);
+  console.log(prop.input.command);
+  var match = /^\s*(\w+)/i.exec(prop.input.command);
   if (match) {
     prop.input.callsign = match[1];
   }
@@ -358,7 +358,7 @@ function input_history_next() {
 function input_run() {
   var result;
   try {
-    result = zlsa.atc.Parser.parse(prop.input.command.trim());
+    result = zlsa.atc.Parser.parse(prop.input.command.trim().toLowerCase());
   }
   catch (e) {
     if (e.hasOwnProperty('name') && e.name == 'SyntaxError') {
